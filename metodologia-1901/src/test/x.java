@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Test;
+package test;
 
 /**
  *
  * @author T-107
  */
-public class Pregunta {
-       String titulo;
-       Opcion[] opciones;
-       public Pregunta(String x, Opcion[] y){
-           titulo=x;
-           opciones=y;
-       }
+class x {
+    
 }
