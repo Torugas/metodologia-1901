@@ -16,17 +16,41 @@ public class Banco {
       tcredito.setNumero(1234);
       tcredito.setNombre("Banamex");
       tcredito.setTipo("credito");
+      tcredito.setSaldo(100);
       
        TarjetaAhorro tahorro=new TarjetaAhorro();
       tahorro.setNumero(4567);
       tahorro.setNombre("Bancomer");
       tahorro.setTipo("ahorro");
+      tahorro.setSaldo(100);
       
        TarjetaNomina tnomina=new TarjetaNomina();
       tnomina.setNumero(4321);
       tnomina.setNombre("HSBC");
       tnomina.setTipo("nomina");
+      tnomina.setSaldo(100);
       
+      
+      //generamos el codigo del deposito
+      
+      //tarjeta de nomina
+     // tnomina.pagar(150);
+      //tarjeta de ahorro
+      //tahorro.pagar(150);
+      //tarjeta de credito
+      //tcredito.pagar(150);
+      
+      //generamos un arreglo
+      Tarjeta tarjetas[]=new Tarjeta[3];
+      tarjetas[0]=tnomina;
+      tarjetas[1]=tcredito;
+      tarjetas[2]=tahorro;
+      
+      //iteramos el arreglo
+      for(Tarjeta t: tarjetas){
+          t.pagar(150);
+          System.out.println("Saldo es "+t.getSaldo());
+      }
     }
     
 }

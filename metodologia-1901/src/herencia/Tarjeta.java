@@ -9,14 +9,17 @@ package herencia;
  *
  * @author T-107
  */
-class Tarjeta {
+public abstract class Tarjeta {
      private int numero;
      private String nombre;
      private String tipo;
      private Float saldo;
     /**
+     * @param deposito
      * @return  Este metodo te regresa el valor el numero de tu tarjeta
      */
+     public abstract void pagar(float deposito);
+     
     public int getNumero() {
         return numero;
     }

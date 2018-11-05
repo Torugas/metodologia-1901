@@ -10,8 +10,13 @@ package herencia;
  * @author T-107
  */
 public class TarjetaCredito extends Tarjeta{
+    public void pagar(float deposito){
+        setSaldo((getSaldo()+deposito)-deposito*0.03f);
+    }
 
+  
+    }
    
       
 
-}
+

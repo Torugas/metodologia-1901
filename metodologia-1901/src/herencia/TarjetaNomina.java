@@ -10,5 +10,9 @@ package herencia;
  * @author T-107
  */
 public class TarjetaNomina extends Tarjeta{
+      public void pagar(float deposito){
+          setSaldo(getSaldo()+deposito);
+    }
+
     
 }
